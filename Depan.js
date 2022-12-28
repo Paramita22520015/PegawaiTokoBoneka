@@ -94,7 +94,8 @@ class Depan extends Component {
                     {
                         this.state.listData.map((val,index)=>(
                             <View style={style.viewList} key={index}>
-                                <Text style={style.textListNama}>{val.nama}</Text>
+                               <Text style={style.textListNama}>{val.nama}</Text>
+                                <Text style={style.textListNama}>{val.alamat}</Text>
                                 <Text style={style.textListEdit} onPress={()=> this.klikEdit(val.id)}>Edit </Text>
                                 <Text style={style.testListDelete} onPress={()=>this.klikDelete(val.id)}>Delete</Text>
                             </View>

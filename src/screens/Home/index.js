@@ -94,6 +94,7 @@ class Home extends Component {
                         this.state.listData.map((val,index)=>(
                         <View style={style.viewList} key={index}>
                             <Text style={style.textListNama}>{val.nama}</Text>
+                            <Text style={style.textListNama}>{val.alamat}</Text>
                             <TouchableOpacity onPress={()=> this.klikEdit(val.id)} style={style.btnEdit}>
                                 <Text style={{color: 'black'}}>Edit</Text>
                             </TouchableOpacity>
